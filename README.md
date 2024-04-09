@@ -52,4 +52,4 @@ reference
 
 [TFBS source code in keras](https://github.com/younglimpo/TFBSmodel)
 
-[modified TFBS source code in pytorch](https://github.com/Dushuai12138/Crop-Type-Mapping-with-manifold-structure/blob/main/nets/TFBS.py)
+[our modified TFBS source code in pytorch](https://github.com/Dushuai12138/Crop-Type-Mapping-with-manifold-structure/blob/main/nets/TFBS.py)
