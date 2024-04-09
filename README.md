@@ -25,37 +25,21 @@ reference
 
 
     |_HT
-    
         |_12bands
-        
             |_0_8510.tif
-            
             ...
-            
         |_EVI
-        
             |_0_8510.tif
-    
             ...
-            
         |_SegmentationClass
-        
             |_0_8510.tif
-            
             ...
-            
         |_ImageSets
-        
             |_Segmentation
-            
                 |_test.txt
-                
                 |_train.txt
-                
                 |_trainval.txt
-                
                 |_val.txt
-            
 
 ### 2.change some parameters in train_process.1_train.py, including
 '''
