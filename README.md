@@ -23,37 +23,38 @@ reference
 ## How to start
 ### 1. make datasets
 
-|_HT
 
-    |_12bands
+    |_HT
     
-        |_0_8510.tif
+        |_12bands
         
-        ...
-        
-    |_EVI
-    
-        |_0_8510.tif
-
-        ...
-        
-    |_SegmentationClass
-    
-        |_0_8510.tif
-        
-        ...
-        
-    |_ImageSets
-    
-        |_Segmentation
-        
-            |_test.txt
+            |_0_8510.tif
             
-            |_train.txt
+            ...
             
-            |_trainval.txt
+        |_EVI
+        
+            |_0_8510.tif
+    
+            ...
             
-            |_val.txt
+        |_SegmentationClass
+        
+            |_0_8510.tif
+            
+            ...
+            
+        |_ImageSets
+        
+            |_Segmentation
+            
+                |_test.txt
+                
+                |_train.txt
+                
+                |_trainval.txt
+                
+                |_val.txt
             
 
 ### 2.change some parameters in train_process.1_train.py, including
