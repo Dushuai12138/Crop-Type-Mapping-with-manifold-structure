@@ -42,6 +42,7 @@ reference
 ### 2.change some parameters in train_process.1_train.py, including
 
 '''
+
 models = ['TFBS']         # choose models
 band = 'EVI'              # choose datasets    
 places = ['2020HT']       # choose aoi
@@ -51,6 +52,7 @@ get_miou = True           # caculate accuracy metrics
 prediction = False        # generate prediction map in whole aoi
 lstm_outputses = [32]     # outputs of LSTM module in TFBS, here we modified it to 32. In different datasets, like EVI dataset, it could be smaller.
 input_features = 1        # inputs of LSTM module, or number of band per month.
+
 '''
 
 ### 3. run train_process.1_train.py
