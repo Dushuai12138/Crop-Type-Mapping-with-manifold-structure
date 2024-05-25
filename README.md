@@ -1,4 +1,4 @@
-# Crop-Type-Mapping-with-manifold-structure
+# 👋 Crop-Type-Mapping-with-manifold-structure
 This is the source code of our study ['Manifold Structure of Multispectral-spatial-temporal Remote Sensing Data in Crop Type Mapping based Temporal Feature Extractor'](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4762397)
 
 The LSTM module helps mine smoother and lower dimensional manifold structure in EVI data. Temporal feature-based segmentation considers temporal feature separately before multispectral-spatial feature.
