@@ -3,11 +3,11 @@ This is the source code of our study ['Manifold Structure of Multispectral-spati
 
 The LSTM module helps mine smoother and lower dimensional manifold structure in EVI data. Temporal feature-based segmentation considers temporal feature separately before multispectral-spatial feature.
 
-## This is the manifold in Hetao irrigation district.
+## This is the manifold in Hetao irrigation district.(Figs. g and h)
 ![HT_TSNE](https://github.com/Dushuai12138/Crop-Type-Mapping-with-manifold-structure/assets/116633147/eb643eaf-3b83-4749-8b16-934be4d68edc)
 
 
-## This is the manifold in Northeast China.
+## This is the manifold in Northeast China.(Figs. g and h)
 ![NE_12bands_TSNE](https://github.com/Dushuai12138/Crop-Type-Mapping-with-manifold-structure/assets/116633147/93c9066a-4b34-4c9b-b6fc-e4dd7d3861a8)
 
 ## How to start
