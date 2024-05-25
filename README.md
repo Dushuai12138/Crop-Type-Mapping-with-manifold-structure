@@ -16,20 +16,20 @@ The LSTM module helps mine smoother and lower dimensional manifold structure in 
 
     |_HT
         |_12bands
-            |_0_8510.tif
+            |_    0_8510.tif
             ...
         |_EVI
-            |_0_8510.tif
+            |_    0_8510.tif
             ...
         |_SegmentationClass
-            |_0_8510.tif
+            |_    0_8510.tif
             ...
         |_ImageSets
             |_Segmentation
-                |_test.txt
-                |_train.txt
-                |_trainval.txt
-                |_val.txt
+                |_   test.txt
+                |_   train.txt
+                |_   trainval.txt
+                |_   val.txt
 
 ### 2.change some parameters in train_process.1_train.py, including
 
