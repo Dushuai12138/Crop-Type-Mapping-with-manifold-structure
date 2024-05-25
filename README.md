@@ -12,8 +12,7 @@ The LSTM module helps mine smoother and lower dimensional manifold structure in 
 
 ## How to start
 ### 1. make datasets
-
-
+```
     |_HT
         |_12bands
             |_    0_8510.tif
@@ -30,9 +29,10 @@ The LSTM module helps mine smoother and lower dimensional manifold structure in 
                 |_   train.txt
                 |_   trainval.txt
                 |_   val.txt
-
+```
 ### 2.change some parameters in train_process.1_train.py, including
-
+```
+    VOCdevkit_path = os.path.join(r'J:\research\GEE\hetao_classification', place)  # base path of datasets
     models = ['TFBS']         # choose models
     band = 'EVI'              # choose datasets    
     places = ['2020HT']       # choose aoi
@@ -42,7 +42,7 @@ The LSTM module helps mine smoother and lower dimensional manifold structure in 
     prediction = False        # generate prediction map in whole aoi
     lstm_outputses = [32]     # outputs of LSTM module in TFBS, here we modified it to 32. In different datasets, like EVI dataset, it could be smaller.
     input_features = 1        # inputs of LSTM module, or number of band per month.
-
+```
 ### 3. run train_process.1_train.py
 
 ## TFBS model structure
