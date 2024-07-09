@@ -62,35 +62,3 @@ if __name__ == "__main__":
     fval.close()  
     ftest.close()
     print("Generate txt in ImageSets done.")
-
-    print("Check datasets format, this may take a while.")
-    print("检查数据集格式是否符合要求，这可能需要一段时间。")
-    classes_nums        = np.zeros([256], int)
-    for i in tqdm(list):
-        name            = total_seg[i]
-        png_file_name   = os.path.join(segfilepath, name)
-        if not os.path.exists(png_file_name):
-            raise ValueError("未检测到标签图片%s，请查看具体路径下文件是否存在以及后缀是否为tif。"%(png_file_name))
-        
-        png             = np.array(gdal.Open(png_file_name).ReadAsArray(), np.uint8)
-
-        classes_nums += np.bincount(np.reshape(png, [-1]), minlength=256)
-            
-    print("打印像素点的值与数量。")
-    print('-' * 37)
-    print("| %15s | %15s |"%("Key", "Value"))
-    print('-' * 37)
-    for i in range(256):
-        if classes_nums[i] > 0:
-            print("| %15s | %15s |"%(str(i), str(classes_nums[i])))
-            print('-' * 37)
-    
-    if classes_nums[255] > 0 and classes_nums[0] > 0 and np.sum(classes_nums[1:255]) == 0:
-        print("检测到标签中像素点的值仅包含0与255，数据格式有误。")
-        print("二分类问题需要将标签修改为背景的像素点值为0，目标的像素点值为1。")
-    elif classes_nums[0] > 0 and np.sum(classes_nums[1:]) == 0:
-        print("检测到标签中仅仅包含背景像素点，数据格式有误，请仔细检查数据集格式。")
-
-    print("JPEGImages中的图片应当为.tif文件、SegmentationClass中的图片应当为.tif文件。")
-    print("如果格式有误，参考:")
-    print("https://github.com/bubbliiiing/segmentation-format-fix")
